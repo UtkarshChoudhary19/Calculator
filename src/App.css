@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.App {
+  text-align: center;
+  
+}
+
+button{
+  padding: 5px 15px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+}
+.section1{
+  margin-top: 20px;
+}
+input{
+  padding: 5px 20px;
+}
+.section4{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+.calculator{
+  border: 1px solid black;
+  width: 30%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  /* height: 100px; */
+}
+.calculator::after {
+  content: "";
+  position: absolute;
+  inset: -.625em;
+  background: linear-gradient(to bottom right,
+  #c07c98, #8b7bbd);
+  filter: blur(2.5em);
+  z-index: -1;
+}
+.error, .success{
+  margin-bottom: 20px;
+}
